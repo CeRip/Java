@@ -1,0 +1,18 @@
+package libro.cap01;
+import java.util.Scanner;
+
+public class HolaMundoNombre {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Permite leer datos del teclado
+		Scanner scanner= new Scanner(System.in);
+		//Mensaje para el usuario
+		System.out.print("Ingrese su nombre: ");
+		//leemos un valor entero por teclado
+		String nom=scanner.nextLine();
+		//mostramos un mensaje y luego el valor leido
+		System.out.println("Hola Mundo: "+ nom);
+	}
+
+}
