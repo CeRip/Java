@@ -13,6 +13,9 @@ public class PrimerosNumeros2 {
 			System.out.println(i);
 			i++;
 		}while(i<=n);
+		if(scanner != null) {
+		    scanner.close();
+		}
 	}
 
 }

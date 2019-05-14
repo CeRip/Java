@@ -15,6 +15,9 @@ public class ParOImpar2 {
 		String mssg= (resto==0) ? " es Par" : " es Impar";
 		//muestro el resultado
 		System.out.println(v+" "+mssg);
+		if(scanner != null) {
+		    scanner.close();
+		}
 	}
 
 }

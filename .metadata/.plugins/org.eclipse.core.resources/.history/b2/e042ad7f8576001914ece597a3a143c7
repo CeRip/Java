@@ -38,9 +38,6 @@ public class DemoSwitch {
 		}
 
 		System.out.println(dia);
-		if(scanner != null) {
-		    scanner.close();
-		}
 	}
 
 }

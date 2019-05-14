@@ -24,9 +24,6 @@ public class DemoArray {
 		for(int j=0; j<i; j++) {
 			System.out.println(arr[j]);
 		}
-		if(scanner != null) {
-		    scanner.close();
-		}
 	}
 
 }

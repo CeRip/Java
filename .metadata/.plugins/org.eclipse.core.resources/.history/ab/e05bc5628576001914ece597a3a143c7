@@ -43,9 +43,6 @@ public class DemoConstantes {
 				dia="Dia incorrecto...Ingrese un valor entre 1 y 7";
 				}
 		System.out.println(dia);
-		if(scanner != null) {
-		    scanner.close();
-		}
 	}
 
 }

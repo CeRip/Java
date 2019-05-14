@@ -15,9 +15,6 @@ public class PrimerosNumeros1 {
 			//incremento el valor de i
 			i++;
 		}
-		if(scanner != null) {
-		    scanner.close();
-		}
 			
 	}
 

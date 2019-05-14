@@ -10,9 +10,6 @@ public class PrimerosNumeros3 {
 		for(int i=1; i<=n; i++) {
 			System.out.println(i);
 		}
-		if(scanner != null) {
-		    scanner.close();
-		}
 		
 	}
 

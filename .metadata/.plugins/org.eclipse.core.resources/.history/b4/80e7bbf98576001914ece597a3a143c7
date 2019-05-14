@@ -11,9 +11,6 @@ public class EsMayorQue21 {
 		int edad= scanner.nextInt();
 		if(edad>=21) {System.out.println("Usted es mayor de edad");}
 		else {System.out.println("Usted es menor de edad");}
-		if(scanner != null) {
-		    scanner.close();
-		}
 	}
 
 }

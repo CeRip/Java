@@ -13,9 +13,6 @@ public class ParOImpar {
 		int resto= v%2;
 		if (resto== 0) {System.out.println(v+" es Par");}
 		else {System.out.println(v+" es Impar");}
-		if(scanner != null) {
-		    scanner.close();
-		}
 	}
 
 }
