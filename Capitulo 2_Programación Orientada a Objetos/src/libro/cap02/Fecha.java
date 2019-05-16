@@ -5,6 +5,14 @@ public class Fecha {
 	private int mes;
 	private int anio;
 	
+	//constructor
+	public Fecha(int d, int m, int a) {
+		dia=d;
+		mes=m;
+		anio=a;
+	}
+	
+	//setters y getters
 	public int getDia() {
 		//retorna el valor de una variable dia
 		return dia;
@@ -30,4 +38,16 @@ public class Fecha {
 	public void setAnio(int anio) {
 		this.anio=anio;
 	}
+	
+	//sobrescribimos el metodo equals
+		public boolean equals(Object o) {
+			Fecha otra=(Fecha) o;
+			return (dia==otra.dia) && (mes==otra.mes) && (anio==otra.anio);
+		}
+		
+		//sobrescribimos el metodo toString
+		public String toSting() {
+			//retorna la cadena tal como queremos que se vea la fecha
+			return dia+"/"+mes+"/"+anio;
+		}
 }

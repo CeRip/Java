@@ -4,7 +4,11 @@ public class TestFecha {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Fecha f=new Fecha();
+		//no funciona porque sobreescribimos el constructor
+		//Fecha f=new Fecha();
+		//reemplaza a la linea anterior
+		Fecha f= new Fecha(2,10,1970);
+		
 		//las variables son privadas, no tenemos acceso
 		/*f.dia=2;
 		f.mes=10;
@@ -18,8 +22,8 @@ public class TestFecha {
 		System.out.println("Dia= "+f.getDia());
 		System.out.println("Mes= "+f.getMes());
 		System.out.println("Año= "+f.getAnio());
-		//imprimo la fecha
-		System.out.println(f);
+		//imprimo la fecha, utilizando el metodo sobrescrito toString()
+		System.out.println(f.toSting());
 	}
 
 }
