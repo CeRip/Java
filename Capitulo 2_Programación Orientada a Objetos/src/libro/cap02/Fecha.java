@@ -64,14 +64,49 @@ public class Fecha {
 	}
 	
 	//sobrescribimos el metodo equals
-		public boolean equals(Object o) {
-			Fecha otra=(Fecha) o;
-			return (dia==otra.dia) && (mes==otra.mes) && (anio==otra.anio);
+	public boolean equals(Object o) {
+		Fecha otra=(Fecha) o;
+		return (dia==otra.dia) && (mes==otra.mes) && (anio==otra.anio);
 		}
 		
-		//sobrescribimos el metodo toString
-		public String toSting() {
-			//retorna la cadena tal como queremos que se vea la fecha
-			return dia+"/"+mes+"/"+anio;
+	//sobrescribimos el metodo toString
+	public String toSting() {
+		//retorna la cadena tal como queremos que se vea la fecha
+		return dia+"/"+mes+"/"+anio;
 		}
+	
+	//retorna la fecha expresada en dias si consideramos que cada año tiene 360 dias y los meses 30 dias
+	private int fechaToDias() {
+		return anio*360+mes*30+dia;
+	}
+	//asigna la fecha expresada en dias a los atributos
+	private void diasToFecha(int i) {
+		//dividimos por 360 y obtenemos el año
+		anio=(int) i/360;
+		//del resto de la division podemos obtener el mes y el dia
+		int resto= i%360;
+		//el mes es resto dividido en 30
+		mes =(int)resto/30;
+		//el resto de la division anterior son los dias
+		dia= resto%30;
+		//ajuste sobre si dia quedo en cero
+		if(dia==0) {
+			dia=30;
+			mes--;
+		}
+		//ajuste por si el mes quedo en cero
+		if(mes==0) {
+			mes=12;
+			anio--;
+		}
+	}
+	
+	//agrega dias a la fecha
+	public void addDias(int d) {
+		//convierto la fecha a  dias y le sumo d
+		int sum=fechaToDias()+d;
+		//la fecha resultante (sum) la separa en dia, mes y anio
+		diasToFecha(sum);
+	}
+	
 }
