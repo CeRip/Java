@@ -15,8 +15,7 @@ public class Cadenas5b {
 		}
 		long hf=System.currentTimeMillis();
 		System.out.println(s);
-		System.out.println((hf-hi)+ " milisegundos");//resultado 8406 milisegundos
+		System.out.println((hf-hi)+ " milisegundos");
 	}
 
 }
-//el operador + en mucho mas lento y menos eficiente que StringBuffer
