@@ -19,11 +19,7 @@ public class Cadenas7 {
 		}//continua hasta que se finaliza la cadena
 		
 		//utilizando el metodo split
-		System.out.println("\nUtilizamos el método Split");
-		String [] tokens= s.split("[|]");
-		for(int i=0; i<tokens.length;i++) {
-			System.out.println(tokens[i]);
-		}
+		
 	}
 
 }
