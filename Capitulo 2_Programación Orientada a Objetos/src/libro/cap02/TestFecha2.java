@@ -31,6 +31,10 @@ public class TestFecha2 {
 		else {
 			System.out.println("Son distintas");
 		}
+		
+		//utilizamos el nuevo constructor
+		Fecha f3=new Fecha("25/10/2004");
+		System.out.println(f3.toSting());
 		scanner.close();
 	}
 
