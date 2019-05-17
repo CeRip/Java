@@ -1,4 +1,4 @@
-package libro.cap02;
+package libro.cap02.fechas;
 
 public class TestFecha {
 

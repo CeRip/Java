@@ -1,4 +1,4 @@
-package libro.cap02;
+package libro.cap02.fechas;
 import java.util.Scanner;
 public class TestFecha2 {
 //comparar dos fechas 

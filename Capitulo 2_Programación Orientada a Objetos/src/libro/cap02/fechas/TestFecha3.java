@@ -1,4 +1,4 @@
-package libro.cap02;
+package libro.cap02.fechas;
 import java.util.Scanner;
 public class TestFecha3 {
 //sumar dias a una fecha
