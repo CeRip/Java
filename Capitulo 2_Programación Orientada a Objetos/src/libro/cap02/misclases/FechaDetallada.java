@@ -9,11 +9,17 @@ public class FechaDetallada extends Fecha {
 			"Noviembre","Diciembre"
 	};
 	
+	public FechaDetallada(int dia, int mes, int anio) {
+		//invocamos al contructor del padre
+		super(dia,mes,anio);
+	}
+	
 	public FechaDetallada(String f) {
 		super(f);
 	}
 	public FechaDetallada() {
-		
+		//invocamos al constructor que recibe tres enteros
+		this(0,0,0);
 	}
 	public String toString() {
 		return getDia()+" de "+meses[getMes()-1]+" de "+getAnio();

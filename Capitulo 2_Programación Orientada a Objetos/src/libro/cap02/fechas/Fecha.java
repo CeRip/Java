@@ -75,6 +75,7 @@ public class Fecha {
 		return dia+"/"+mes+"/"+anio;
 		}
 	
+	
 	//retorna la fecha expresada en dias si consideramos que cada año tiene 360 dias y los meses 30 dias
 	private int fechaToDias() {
 		return anio*360+mes*30+dia;
