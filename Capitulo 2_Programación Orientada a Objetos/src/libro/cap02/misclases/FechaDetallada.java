@@ -8,6 +8,13 @@ public class FechaDetallada extends Fecha {
 			"Junio","Julio","Agosto","Septiembre","Octubre",
 			"Noviembre","Diciembre"
 	};
+	
+	public FechaDetallada(String f) {
+		super(f);
+	}
+	public FechaDetallada() {
+		
+	}
 	public String toString() {
 		return getDia()+" de "+meses[getMes()-1]+" de "+getAnio();
 	}
