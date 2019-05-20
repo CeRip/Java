@@ -1,6 +1,6 @@
 package libro.cap02.colecciones;
 
-public class MiColeccion {
+public class MiColeccion<T> {
 	private Object datos[]=null;
 	private int len=0;
 	
@@ -10,8 +10,8 @@ public class MiColeccion {
 	}
 	
 	//retorna el i-esimo elemento de la coleccion
-	public Object obtener(int i) {
-		return datos[i];
+	public T obtener(int i) {
+		return (T)datos[i];
 	}
 	
 	//indica cuantos elementos tiene la coleccion
@@ -19,7 +19,7 @@ public class MiColeccion {
 		return len;
 	}
 	
-	public void insertar(Object elm, int i) {
+	public void insertar(T elm, int i) {
 		//verificamos si la capacidad del array esta colmada
 		if(len==datos.length) {
 			//creamos un nuevo array con el doble de la capacidad del anterior
@@ -54,13 +54,13 @@ public class MiColeccion {
 	
 	//su objetivo es agregar un elemento al final deel array se resuelve invocando al metodo "insertar"
 	//para insetar el elemento en la posicion len
-	public void agregar(Object elm) {
+	public void agregar(T elm) {
 		insertar(elm,len);
 	}
 	
 	//elimina un elemento desplazando los demas hacia arriba
-	public Object eliminar(int i) {
-		Object aux=datos[i];
+	public T eliminar(int i) {
+		T aux=(T)datos[i];
 		for(int j=i; j<len-1;j++) {
 			datos[j]=datos[j+1];
 		}

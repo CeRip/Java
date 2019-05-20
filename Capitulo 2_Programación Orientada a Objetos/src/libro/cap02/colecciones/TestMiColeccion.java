@@ -25,6 +25,7 @@ public class TestMiColeccion {
 			aux=(String) mc.obtener(i);
 			System.out.println(aux+"-"+aux.length()+" caracteres");
 		}
+		scanner.close();
 	}
 
 }
