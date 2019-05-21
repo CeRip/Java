@@ -7,7 +7,7 @@ public class TestMiColeccion {
 		// TODO Auto-generated method stub
 		Scanner scanner=new Scanner(System.in);
 		//creo una coleccion con capacidad inicial=5
-		MiColeccion mc=new MiColeccion(5);
+		MiColeccion <String> mc=new MiColeccion <String>(5);
 		//leo el primer nombre
 		System.out.println("Ingrese Nombre: ");
 		String nom=scanner.next();

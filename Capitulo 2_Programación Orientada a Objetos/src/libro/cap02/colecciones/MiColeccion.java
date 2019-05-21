@@ -8,7 +8,7 @@ public class MiColeccion<T> {
 	public MiColeccion(int capacidadInicial) {
 		datos=new Object[capacidadInicial];
 	}
-	
+	@SuppressWarnings("unchecked")
 	//retorna el i-esimo elemento de la coleccion
 	public T obtener(int i) {
 		return (T)datos[i];
@@ -44,7 +44,7 @@ public class MiColeccion<T> {
 	}
 	
 	//este metodo recorre el array mientras no se encuente el elemento que busca
-	public int buscar (Object elm) {
+	public int buscar (T elm) {
 		int i=0;
 		//mientras no nos pasemos del tope y mientra no encuentre...
 		for(;i<len && !datos[i].equals(elm);i++);
@@ -57,7 +57,7 @@ public class MiColeccion<T> {
 	public void agregar(T elm) {
 		insertar(elm,len);
 	}
-	
+	@SuppressWarnings("unchecked")
 	//elimina un elemento desplazando los demas hacia arriba
 	public T eliminar(int i) {
 		T aux=(T)datos[i];
