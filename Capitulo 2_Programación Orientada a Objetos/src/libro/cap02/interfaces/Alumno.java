@@ -25,4 +25,14 @@ public class Alumno implements Comparable<Alumno> {
 		return nombre+", "+edad+", "+notaPromedio;
 	}
 	//setters y getters...
+
+	public Alumno getNombre() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public int getNotaPromedio() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }

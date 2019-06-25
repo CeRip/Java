@@ -1,5 +1,7 @@
 package libro.cap02.interfaces;
 
+import libro.cap02.interfaces.criterios.Criterio;
+
 public class Util {
 //esta clase utilizara un metodo estatico ordenar, que recibira un array de objetos "comparables"
 //con esto podemos ordenarlos sin problema aplicando el algoritmo de "la burbuja"
@@ -18,6 +20,29 @@ public class Util {
 					ordenado=false;
 				}
 			}
+		}
+	}
+	
+	public static void ordenar(Comparable arr[],Criterio cr) {
+		boolean ordenado=false;
+		while(!ordenado) {
+			ordenado=true;
+			for (int i=0, j=arr.length-1;i<=j;i++,j--) {
+				if (cr.comparar(arr[i+1], arr[i])<0) {
+					Comparable aux=arr[i];
+					arr[i]=arr[i+1];
+					arr[i+1]=aux;
+					ordenado=false;
+				}
+			}
+		}
+	}
+	
+	
+	
+	public static void imprimir(Object arr[]) {
+		for (int i=0; i<arr.length; i++) {
+			System.out.println(arr[i]);
 		}
 	}
 }

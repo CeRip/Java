@@ -3,4 +3,6 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="libro.cap02.fechas.Fecha"/>
 <fullyQualifiedTypeName name="libro.cap02.misclases.TestFechaDetallada"/>
+<fullyQualifiedTypeName name="libro.cap02.interfaces.criterios.Criterio"/>
+<fullyQualifiedTypeName name="libro.cap02.interfaces.criterios.CriterioAlumNombre"/>
 </qualifiedTypeNameHistroy>
