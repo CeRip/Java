@@ -1,5 +1,6 @@
 package ejercicio.agenda;
 
+
 public class TestEvento {
 
 	
@@ -17,13 +18,12 @@ public class TestEvento {
 		System.out.println("Fecha: "+evento.getFecha());
 		
 		
-		Object[] agenda= {new Evento("Curso", true, new Fecha(2,5,2000)),
+		Evento[] agenda= {new Evento("Curso", true, new Fecha(2,5,2000)),
 						  new Evento("Reunion", false, new Fecha(24,06,2005)),
 						  new Evento("Bautiso", true, new Fecha(30,12,2014))};
 		
-		for(int i=0; i<agenda.length; i++) {
-			System.out.println("Evento["+i+"]= "+agenda[i]);
-		}
+		MostrarConjunto.mostrar(agenda);
+		
 	}
 
 }
