@@ -27,10 +27,9 @@ public class TestEvento {
 		Evento agenda1[]=new Evento[3];
 	
 		int f1=1;
-		String nombrePorCargar=new String();
-		boolean estadoPorCargar;
-		String sfecha=new String();
-		Fecha fechaPorCargar=new Fecha();
+		
+		//se utiliza para identificar el elemento a modificar
+		String nomId=new String();
 		
 		do {
 			MostrarConjunto.menu();
@@ -39,15 +38,8 @@ public class TestEvento {
 				case 1:
 					System.out.println("Cargar Datos");
 					for(int i=0;i<agenda1.length;i++) {
-						System.out.println("\nIngrese los datos");
-						System.out.println("Nombre: ");
-						nombrePorCargar=scanner.next();
-						System.out.println("Estado: ");
-						estadoPorCargar=scanner.nextBoolean();
-						System.out.println("Fecha(dd/mm/aaaa): ");
-						sfecha=scanner.next();
-						fechaPorCargar=new Fecha(sfecha);
-						agenda1[i]=OperacionesAgenda.cargarEvento(nombrePorCargar,estadoPorCargar,fechaPorCargar);
+						
+						agenda1[i]=OperacionesAgenda.cargarEvento();
 					}
 					break;
 				case 2:
@@ -57,6 +49,9 @@ public class TestEvento {
 					break;
 				case 3:
 					System.out.println("Modifica Datos");
+					System.out.println("Ingrese el nombre del elemento a modificar");
+					nomId=scanner.next();
+					agenda1=OperacionesAgenda.modificarEvento(nomId, agenda1);
 					
 					break;
 				case 4:
