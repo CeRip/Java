@@ -1,5 +1,5 @@
 package ejercicio.agenda;
- 
+ //Nombre, dni, mail, telefono
 public class Evento {
 	//private int id;
 	private String nombre;
